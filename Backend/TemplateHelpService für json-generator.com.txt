@@ -1,0 +1,32 @@
+{
+    Reisen:[
+      {'repeat(5, 10)': {
+        id: '{{objectId()}}',
+        Kundenname: '{{random("Hans Müller", "Klaus Dieter", "Peter Dietrich","Mia Musterfrau")}}',
+        Anbieter : [
+          {'repeat(5,10)': {
+            Anbieter : '{{company}}',
+            Ort: '{{city()}}',
+            Telefon :' +1 {{phone()}}',
+            Beweis: 
+            {
+                id: '{{integer(0, 10)}} ',
+                Rechnungsnummer: '{{integer(900000, 999999)}}'
+              
+            },
+            Alternative : 
+            {
+              Anbieter : '{{company}}',
+               Ort: '{{city()}}',
+              Telefon :' +1 {{phone()}}'
+            }
+          }
+          }
+          ]
+      }
+      }
+    ],
+    Stornierungen : {
+      id : '{{objectId()}}'
+    }
+  }
