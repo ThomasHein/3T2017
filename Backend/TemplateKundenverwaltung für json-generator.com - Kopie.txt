@@ -1,0 +1,37 @@
+[
+  {
+    Kunden:[
+      {'repeat(5, 10)': {
+        _id: '{{objectId()}}',
+        Kundenname: '{{random("Hans Müller", "Klaus Dieter", "Peter Dietrich","Mia Musterfrau")}}',
+        Interessen: '{{random("Sport", Ruhig", "Romantik","Was Neues")}}',
+        LetzeReisen: [
+          {
+            'repeat(3)': {
+              id: '{{integer(0, 10)}} ',
+              Ort: '{{city()}}'
+            }}],
+        picture: 'http://placehold.it/32x32',
+        age: '{{integer(20, 40)}}',
+        eyeColor: '{{random("blau", "braun", "grün")}}',
+        phone: '+1 {{phone()}}',
+        address: '{{integer(100, 999)}} {{street()}}, {{city()}}, {{state()}}, {{integer(100, 10000)}}'
+      }}],
+      Events: [
+        {
+          'repeat(3)': {
+            id: '{{index()}}',
+            Ort: '{{city()}}'
+          }
+        }
+      ],
+          Equipment: [
+        {
+          'repeat(3)': {
+            id: '{{index()}}',
+            Geraet: '{{random("Fahrrad", "Kanu", "Luftkissenboot","GoCarts")}}'
+          }
+        }
+      ]
+  }
+]
