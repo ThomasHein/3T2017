@@ -35,7 +35,7 @@
             "Ort": "Brewster"
           },
           {
-            "id": "6 ",
+            "id": "1 ",
             "Ort": "Rockhill"
           },
           {
@@ -59,7 +59,7 @@
             "Ort": "Barstow"
           },
           {
-            "id": "7 ",
+            "id": "10",
             "Ort": "Reno"
           },
           {
@@ -83,11 +83,11 @@
             "Ort": "Coultervillle"
           },
           {
-            "id": "5 ",
+            "id": "11",
             "Ort": "Enoree"
           },
           {
-            "id": "3 ",
+            "id": "12",
             "Ort": "Homeland"
           }
         ],
@@ -103,15 +103,15 @@
         "Interessen": "<SyntaxError: Unexpected string>",
         "LetzeReisen": [
           {
-            "id": "7 ",
+            "id": "13",
             "Ort": "Ivanhoe"
           },
           {
-            "id": "3 ",
+            "id": "14 ",
             "Ort": "Boonville"
           },
           {
-            "id": "7 ",
+            "id": "15",
             "Ort": "Eagleville"
           }
         ],
@@ -155,5 +155,68 @@
         "Kundenummer": 0,
         "Ort": "Oceola"
       }
-	 ]
+	 ],
+	 "Reisen": [
+		 {
+            "id": "1 ",
+            "Ort": "Rockhill"
+          },
+		  {
+            "id": "2 ",
+            "Ort": "Callaghan"
+          },
+		  {
+            "id": "3 ",
+            "Ort": "Wakarusa"
+          },
+		  {
+            "id": "4 ",
+            "Ort": "Brady"
+          },
+		  {
+            "id": "5 ",
+            "Ort": "Cowiche"
+          },
+		  {
+            "id": "6 ",
+            "Ort": "Brewster"
+          },
+		  {
+            "id": "7 ",
+            "Ort": "Barstow"
+          },
+		  {
+            "id": "8 ",
+            "Ort": "Coultervillle"
+          },
+          {
+            "id": "9 ",
+            "Ort": "Flintville"
+          },
+          {
+            "id": "10 ",
+            "Ort": "Reno"
+          },
+          
+          {
+            "id": "11",
+            "Ort": "Enoree"
+          },
+          {
+            "id": "12",
+            "Ort": "Homeland"
+          },
+		  {
+            "id": "13",
+            "Ort": "Ivanhoe"
+          },
+          {
+            "id": "14 ",
+            "Ort": "Boonville"
+          },
+          {
+            "id": "15",
+            "Ort": "Eagleville"
+          }
+        ]
   }
