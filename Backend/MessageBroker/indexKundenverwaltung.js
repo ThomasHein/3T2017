@@ -16,6 +16,10 @@ app.get("/Equipment",function(req,res){
     var Equipment = require('../Mocks/Kundenverwaltung.json').Equipment;
     res.send(Equipment)
 });
+app.get("/Reisen",function(req,res){
+    var Reisen = require('../Mocks/Kundenverwaltung.json').Reisen;
+    res.send(Reisen)
+});
 
 app.post('/Buchungen', function(req, res){
     console.log('POST/Buchungen');

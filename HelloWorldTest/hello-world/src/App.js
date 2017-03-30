@@ -14,52 +14,51 @@ render() {
 		  <h3>Hier bleiben keine Wünsche offen</h3>
          </div>
 		 <div id="MiddleDiv">
-			<label>Region:
-		 <select>
-			 <option value="Berlin">Berlin</option>
-			 <option value="Brandenburg">Brandenburg</option>
-		 </select>
-		 </label>
-		 <button type="button" onClick={()=> this.search()} >Reise suchen</button>
-		 <button type="button" onClick={() => this.book()} >Jetzt buchen</button>
+			<button type="button" onClick={()=> this.search()} >Reise suchen</button>
+			<button type="button" onClick={() => this.book()} >Jetzt buchen</button>
 		 </div>
 		 <div id="ReisenDiv"></div>
       </div>
      );
    };
    search(){
+	   var that=this;
      console.log("start search");
 	 $.get("http://localhost:4000/Reisen", function(data){
 			$("#ReisenDiv").append("<h3>loading....</h3>");
 	 }).done(function(data){
-		 this.mylist=[];
+		    that.mylist=[];
 			console.log("Datalength: "+data.length);
 			for(var i=0;i<data.length;i++){
-				// this.mylist.push("Reise nach: "+data[i].Ort);
-				this.mylist.push(data[i]);
-				console.log(this.mylist[i]);
+				that.mylist.push(data[i]);
+				console.log(that.mylist[i]);
 			};
 			$("#ReisenDiv").empty();
-			// for(var j=0;j<this.mylist.length;j++){
-				// $("#ReisenDiv").append("<p>"+this.mylist[j]+"</p>")
-			// }
-			
-			$("#ReisenDiv").append("<table id='table'><tr><th>Id</th><th>Ort</th><th></th></tr>")
-			for(var j=0;j<this.mylist.length;j++){
-				console.log(this.mylist[j].id);
-				$("#ReisenDiv").append("<tr><td>"+this.mylist[j].id+"</td><td>"+this.mylist[j].Ort+"</td><td></td>");
+			$("#ReisenDiv").append("<table id='table'><thead><tr><th>Id</th><th>Ort</th><th></th></tr></thead> <tbody id='body'>")
+			for(var j=0;j<that.mylist.length;j++){
+				console.log(that.mylist[j].id);
+				$("#body").append("<tr><td>"+that.mylist[j].id+
+				"</td><td>"+that.mylist[j].Ort+
+				"</td><td><input type='radio' name='travel' value="+j+" /></td>");
 			}
-			$("#ReisenDiv").append("</table>")
+			$("#ReisenDiv").append(" </tbody></table>")
 			console.log("end search");
+			
+			
 	 }).fail(function(){
 		console.log("Error while searching"); 
 	 });
    }
    book(){
+	   var that=this;
 	   console.log("start booking");
+	   var index=$('input[name=travel]:checked').val();
+	   console.log("Index: "+index);
+	   var data=that.mylist[index];
+	   console.log(data.Ort);
 	   $.post("http://localhost:4000/Buchungen",{
         "Kundenummer": 0,
-        "Ort": "Oceola",
+        "Ort": data.Ort,
 		"Kundenname":"Testkunde"
       }).done(function(){
 		  console.log("end booking");
