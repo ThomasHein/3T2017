@@ -28,7 +28,7 @@
 					body: { id: 123456 },
 					headers: new Headers()
 				}
-				fetch("http://localhost:3100/Stornierungen", cancelData)
+				fetch("http://localhost:5000/Stornierungen", cancelData)
 					.then(function(resp) {
 						document.getElementById("cancelStatus").textContent = 
 							resp.status == 201 ? "Stornierung Erfolgreich." : "Es ist ein Fehler aufgetreten (" + resp.status + ").";
@@ -37,7 +37,7 @@
 						console.log("Cancel failed.");
 					});
 			
-				fetch("http://localhost:3100/reisen")
+				fetch("http://localhost:5000/reisen")
 					.then((resp) => resp.json())
 					.then(function(data) {
 						var divAlternatives = document.getElementById("alternatives");

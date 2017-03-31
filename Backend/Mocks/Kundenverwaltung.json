@@ -1,0 +1,222 @@
+
+  {
+    "Kunden": [
+      {
+        "id": "58dbb4cb54f45f47ceb61cc6",
+        "Kundenname": "Klaus Dieter",
+        "Interessen": "<SyntaxError: Unexpected string>",
+        "LetzeReisen": [
+          {
+            "id": "2 ",
+            "Ort": "Callaghan"
+          },
+          {
+            "id": "9 ",
+            "Ort": "Flintville"
+          },
+          {
+            "id": "3 ",
+            "Ort": "Wakarusa"
+          }
+        ],
+        "picture": "http://placehold.it/32x32",
+        "age": 20,
+        "eyeColor": "braun",
+        "phone": "+1 (958) 408-2659",
+        "address": "101 Chapel Street, Barronett, New Hampshire, 9746"
+      },
+      {
+        "id": "58dbb4cb7eaae644cb892cc9",
+        "Kundenname": "Mia Musterfrau",
+        "Interessen": "<SyntaxError: Unexpected string>",
+        "LetzeReisen": [
+          {
+            "id": "6 ",
+            "Ort": "Brewster"
+          },
+          {
+            "id": "1 ",
+            "Ort": "Rockhill"
+          },
+          {
+            "id": "5 ",
+            "Ort": "Cowiche"
+          }
+        ],
+        "picture": "http://placehold.it/32x32",
+        "age": 24,
+        "eyeColor": "blau",
+        "phone": "+1 (858) 445-3807",
+        "address": "327 Tompkins Place, Leyner, Virgin Islands, 9402"
+      },
+      {
+        "id": "58dbb4cbde895d903294eec0",
+        "Kundenname": "Klaus Dieter",
+        "Interessen": "<SyntaxError: Unexpected string>",
+        "LetzeReisen": [
+          {
+            "id": "7 ",
+            "Ort": "Barstow"
+          },
+          {
+            "id": "10",
+            "Ort": "Reno"
+          },
+          {
+            "id": "4 ",
+            "Ort": "Brady"
+          }
+        ],
+        "picture": "http://placehold.it/32x32",
+        "age": 27,
+        "eyeColor": "grün",
+        "phone": "+1 (953) 572-2281",
+        "address": "909 Hillel Place, Kennedyville, Minnesota, 5569"
+      },
+      {
+        "id": "58dbb4cbc8d51dcc79f3e817",
+        "Kundenname": "Mia Musterfrau",
+        "Interessen": "<SyntaxError: Unexpected string>",
+        "LetzeReisen": [
+          {
+            "id": "8 ",
+            "Ort": "Coultervillle"
+          },
+          {
+            "id": "11",
+            "Ort": "Enoree"
+          },
+          {
+            "id": "12",
+            "Ort": "Homeland"
+          }
+        ],
+        "picture": "http://placehold.it/32x32",
+        "age": 30,
+        "eyeColor": "grün",
+        "phone": "+1 (844) 440-2693",
+        "address": "230 Woodruff Avenue, Waterview, North Dakota, 2473"
+      },
+      {
+        "id": "58dbb4cb1adc6eeff3b1af3a",
+        "Kundenname": "Klaus Dieter",
+        "Interessen": "<SyntaxError: Unexpected string>",
+        "LetzeReisen": [
+          {
+            "id": "13",
+            "Ort": "Ivanhoe"
+          },
+          {
+            "id": "14 ",
+            "Ort": "Boonville"
+          },
+          {
+            "id": "15",
+            "Ort": "Eagleville"
+          }
+        ],
+        "picture": "http://placehold.it/32x32",
+        "age": 21,
+        "eyeColor": "grün",
+        "phone": "+1 (809) 403-3225",
+        "address": "406 Hinckley Place, Russellville, Alaska, 3912"
+      }
+    ],
+    "Events": [
+      {
+        "id": 0,
+        "Ort": "Oceola"
+      },
+      {
+        "id": 1,
+        "Ort": "Troy"
+      },
+      {
+        "id": 2,
+        "Ort": "Waikele"
+      }
+    ],
+    "Equipment": [
+      {
+        "id": 0,
+        "Geraet": "GoCarts"
+      },
+      {
+        "id": 1,
+        "Geraet": "Luftkissenboot"
+      },
+      {
+        "id": 2,
+        "Geraet": "Luftkissenboot"
+      }
+    ],
+	"Buchungen": [
+      {
+        "Kundenummer": 0,
+        "Ort": "Oceola"
+      }
+	 ],
+	 "Reisen": [
+		 {
+            "id": "1 ",
+            "Ort": "Rockhill"
+          },
+		  {
+            "id": "2 ",
+            "Ort": "Callaghan"
+          },
+		  {
+            "id": "3 ",
+            "Ort": "Wakarusa"
+          },
+		  {
+            "id": "4 ",
+            "Ort": "Brady"
+          },
+		  {
+            "id": "5 ",
+            "Ort": "Cowiche"
+          },
+		  {
+            "id": "6 ",
+            "Ort": "Brewster"
+          },
+		  {
+            "id": "7 ",
+            "Ort": "Barstow"
+          },
+		  {
+            "id": "8 ",
+            "Ort": "Coultervillle"
+          },
+          {
+            "id": "9 ",
+            "Ort": "Flintville"
+          },
+          {
+            "id": "10 ",
+            "Ort": "Reno"
+          },
+          
+          {
+            "id": "11",
+            "Ort": "Enoree"
+          },
+          {
+            "id": "12",
+            "Ort": "Homeland"
+          },
+		  {
+            "id": "13",
+            "Ort": "Ivanhoe"
+          },
+          {
+            "id": "14 ",
+            "Ort": "Boonville"
+          },
+          {
+            "id": "15",
+            "Ort": "Eagleville"
+          }
+        ]
+  }
