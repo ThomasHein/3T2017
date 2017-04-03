@@ -10,9 +10,8 @@ app.get('/Reisen', function(req, res){
 
 });
 
-RabbitMqHadler.receiveQueueChanges(function(buchungen){
+RabbitMqHadler.receiveQueueChanges(function(buchung){
     console.log("Objekt per Queue empfangen");
-    buchungen.forEach(function(buchung) {
         var Reise = {"id": buchung.Kundenummer,
       "Kundenname": buchung.Kundenname,
       "Wohnort":buchung.Ort,
@@ -48,11 +47,10 @@ RabbitMqHadler.receiveQueueChanges(function(buchungen){
       ]
     }
     MongoDBHanler.insertReisen(Reise);
-    }, this);
-    
-})
+    }
+  )
 
 
-var port = 3100;
+var port = 5000;
 app.listen(port);
 console.log('Listening at http://localhost:' + port)

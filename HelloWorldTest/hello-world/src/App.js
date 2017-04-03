@@ -59,11 +59,11 @@ class App extends Component {
 	   console.log("Index: "+index);
 	   var data=that.state.mylist[index];
 	   console.log(data.Ort);
-	   $.post("http://localhost:4000/Buchungen",{
+	   $.post("http://localhost:4000/Buchungen",{ "Buchungen":{
 			"Kundenummer": 0,
 			"Ort": data.Ort,
 			"Kundenname":"Testkunde"
-		}).done(function(){
+	   }}).done(function(){
 			console.log("end booking");
 			$("#MiddleDiv").empty();
 			$("#ReisenDiv").empty();
